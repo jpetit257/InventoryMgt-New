@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Jean Petit IMS</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="repassword_hint">Re-enter Password</string>
+    <string name="wrong_userpass">Invalid login attempt.</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="login_label">Login</string>
+    <string name="register_label">Register</string>
+    <string name="login_invitation1">Already have an Account?</string>
+    <string name="login_invitation2">Login</string>
+    <string name="register_invitation1">Don\'t have an Account?</string>
+    <string name="register_invitation2">Register</string>
+    <string name="weak_password_label">Password is too weak</string>
+
+    <string name="item_label">Item:</string>
+    <string name="item_hint">Item</string>
+    <string name="quantity_label">Qty:</string>
+    <string name="quantity_text">0</string>
+    <string name="description_label">Description:</string>
+    <string name="description_hint">Enter description here...</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="asc">Asc</string>
+    <string name="desc">Desc</string>
+    <string name="item_deleted">Item deleted.</string>
+    <string name="item_added">Item added.</string>
+    <string name="item_updated">Item updated.</string>
+    <string name="create">Create</string>
+    <string name="category">New category?</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_item">Update Item</string>
+    <string name="add_item">Add Item</string>
+    <string name="no_items">No inventory items exist in this category.</string>
+    <string name="category_exists">The category "%1$s" already exists.</string>
+    <string name="item_number">%1$s (%2$d of %3$d)</string>
+    <string name="import_items">Import</string>
+    <string name="select_category">Select a category:</string>
+    <string name="undo">Undo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.zybooks.jeanpetitims.ItemEditActivity">
+
+    <TextView
+        android:id="@+id/itemLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_label"
+        android:labelFor="@+id/itemText"
+        style="@style/ItemLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/itemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/item_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        style="@style/ItemEditText"
+        app:layout_constraintTop_toBottomOf="@id/itemLabel"
+        app:layout_constraintBottom_toTopOf="@+id/quantityLabel"
+        app:layout_constraintLeft_toRightOf="@id/itemLabel"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity_label"
+        android:labelFor="@+id/quantityText"
+        style="@style/ItemLabel"
+        app:layout_constraintTop_toBottomOf="@+id/itemText"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        style="@style/ItemEditText"
+        app:layout_constraintTop_toBottomOf="@id/quantityLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/descriptionLabel" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_label"
+        style="@style/ItemLabel"
+        app:layout_constraintTop_toBottomOf="@+id/quantityText"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        tools:text="Description"
+        style="@style/ItemEditText"
+        app:layout_constraintTop_toBottomOf="@id/descriptionLabel"
+        app:layout_constraintLeft_toRightOf="@id/descriptionLabel" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveButtonClick"
+        app:srcCompat="@drawable/check"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
